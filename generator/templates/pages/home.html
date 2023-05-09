@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Úvodní strana našeho webu</h1>
+    <a href="kontakt">Kontaktujte nás</a>
+    <img src="{% static 'img/python.jpg' %}" alt=""> -->
+    <main>
+        <section class="form">
+            <form action="password">
+                <div class="container">
+                    <h1>Práce s formulářem</h1>    
+                    <select name="letters" id="let">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                    </select>
+                    <label for="let">Počet malých písmen</label><br>
+
+                    <select name="big_letters" id="big_let">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                    </select>
+                    <label for="big_let">Počet velkých písmen</label><br>
+
+                    <select name="numbers" id="num">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                    </select>
+                    <label for="num">Počet čísel</label><br>
+
+         
+                    <select name="special" id="spe">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                    </select>
+                    <label for="spe">Počet speciálních znaků</label><br>
+
+                    <input class="btn" type="submit">
+                </div>            
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Vaše super heslo</p>
+    </footer>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
