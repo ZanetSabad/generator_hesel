@@ -11,5 +11,5 @@ urlpatterns = [
     path("cenik", views.cenik),
     path("sluzby", views.sluzby),
     path("password", views.password),
-    path('', include('generator.urls')),
+    path('', include('password_generator.urls')),
 ]
