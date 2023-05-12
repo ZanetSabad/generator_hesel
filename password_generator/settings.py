@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-lap*(e*0wnx6k%o)i)8ymebblb$z)zh299@yl&cjd%%(l(*jb4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -68,7 +68,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'password_generator.wsgi.application'
+# WSGI_APPLICATION = 'password_generator.wsgi.application'
+WSGI_APPLICATION = 'vercel_app.wsgi.app'
 
 
 # Database
